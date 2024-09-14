@@ -1,7 +1,7 @@
-title: "Meu Website Personalizado"
-description: "Este é o meu site personalizado"
-baseurl: "" # Deixe vazio para que o site fique na raiz
-url: "https://jaspior.github.io/COSINE-DP-Earth/"
+title: "COSINE-DP-Earth"
+description: "Site de projeto para COSINE-DP-Earth"
+baseurl: "/COSINE-DP-Earth"  # Caminho base do repositório GitHub Pages
+url: "https://jaspior.github.io"  # URL raiz do site
 
-# Desabilitar temas externos e usar o layout customizado
-theme: null
+# Outras configurações que você possa ter
+theme: null  # Se estiver usando um tema customizado
