@@ -4,6 +4,9 @@ description: ""
 url: "https://jaspior.github.io/COSINE-DP-Earth/main"
 baseurl:
 
+github:
+  repository_url: false
+
 # Definir o tema Cayman
 theme: jekyll-theme-cayman
 
