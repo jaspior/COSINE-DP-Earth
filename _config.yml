@@ -1,0 +1,41 @@
+# Configurações principais
+title: "Dark Photons"
+description: ""
+url: "https://jaspior.github.io/COSINE-DP-Earth/"
+baseurl:
+
+# Definir o tema Cayman
+theme: jekyll-theme-cayman
+
+# Configurações de navegação
+# Você pode adicionar links de navegação aqui.
+# O formato é [nome]: URL, onde "nome" é o texto do link e "URL" é para onde ele aponta.
+# Exemplo:
+# nav:
+#   Home: /
+#   Sobre: /sobre
+#   Projetos: /projetos
+
+# Configurações de markdown
+markdown: kramdown
+highlighter: rouge
+
+# Excluir arquivos que não devem aparecer no site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+
+# Configurações opcionais de paginação (se você tem um blog ou lista de posts)
+paginate: 5
+paginate_path: "/page:num/"
+
+# Plugins opcionais
+plugins:
+  - jekyll-feed # Plugin para criar RSS feed (caso você tenha blog)
+
+# Personalizações de SEO (opcional)
+seo:
+  title: "Meu Site Customizado"
+  description: "Um site simples usando o Cayman Theme no GitHub Pages"
