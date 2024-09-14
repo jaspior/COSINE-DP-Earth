@@ -14,9 +14,23 @@
         </nav>
     </header>
 
-    <main>
-        {{ content }}
-    </main>
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="https://jaspior.github.io/COSINE-DP-Earth/">Home</a></li>
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/projetos">Projetos</a></li>
+                <!-- Adicione mais links conforme necessário -->
+            </ul>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            {{ content }}
+        </main>
+    </div>
 
     <footer>
         <p>© 2024 Meu Website</p>
