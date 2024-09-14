@@ -11,8 +11,8 @@ theme: jekyll-theme-cayman
 # Você pode adicionar links de navegação aqui.
 # O formato é [nome]: URL, onde "nome" é o texto do link e "URL" é para onde ele aponta.
 # Exemplo:
-# nav:
-#   Home: /
+nav:
+  Home: /
 #   Sobre: /sobre
 #   Projetos: /projetos
 
