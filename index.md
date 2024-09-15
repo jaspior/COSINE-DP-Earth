@@ -26,5 +26,5 @@ Earth after 1.7 years of data acquisition from the COSINE-100 experiment will be
 # Introduction {#Introduction}
 
 $$
-L = -\frac{1}{4}F_{\mu \nu}F^{\mu \nu} - -\frac{1}{4}F'_{\mu \nu}F'^{\mu \nu} + \frac{\epsilon '}{2}F_{\mu \nu}F'^{\mu \nu} - \frac{1}{2}m^2_A A'^2 + \sum_f \bar{f}(i \slash{\partial} - q_f e \slash{A} - m_f )f + \bar{\chi} (i\slash{\partial} - g_\chi e \slash{A'} - m_\chi ) \chi
+L = -\frac{1}{4}F_{\mu \nu}F^{\mu \nu} - -\frac{1}{4}F'_{\mu \nu}F'^{\mu \nu} + \frac{\epsilon '}{2}F_{\mu \nu}F'^{\mu \nu} - \frac{1}{2}m^2_A A'^2 + \sum_f \bar{f}(i \slashed{\partial} - q_f e \slashed{A} - m_f )f + \bar{\chi} (i\slashed{\partial} - g_\chi e \slashed{A'} - m_\chi ) \chi
 $$
