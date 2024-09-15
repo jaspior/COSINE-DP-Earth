@@ -6,25 +6,21 @@
     <title>{{ page.title }}</title>
 
     <!-- Mathjax Support -->
-	<script type="text/javascript" async
-		src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-	</script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
     
     <link rel="stylesheet" href="/assets/css/style.css">
-
-    
 </head>
 
-
-    
 <body>
     <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-        <a href="{{ site.baseurl }}/">Home</a>
-        <a href="{{ site.baseurl }}/sobre">Sobre</a>
-        <!-- Adicione outros links conforme necessário -->
-    </nav>
+        <h1>{{ site.title }}</h1>
+        <nav>
+            <a href="{{ site.baseurl }}/">Home</a>
+            <a href="{{ site.baseurl }}/sobre">Sobre</a>
+            <!-- Adicione outros links conforme necessário -->
+        </nav>
     </header>
     
     <div class="container">
@@ -32,10 +28,15 @@
         <aside class="sidebar">
             <h2>Índice</h2>
             <ul>
-                <li><a href="https://jaspior.github.io/COSINE-DP-Earth/">Home</a></li>
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/projetos">Projetos</a></li>
-                <!-- Adicione mais links conforme necessário -->
+                {% assign headers = page.content | split: '<h' %}
+                {% for header in headers %}
+                    {% if header contains '/h' %}
+                        {% assign header_parts = header | split: '>' %}
+                        {% assign title = header_parts[1] | strip_html | strip_newlines %}
+                        {% assign id = title | downcase | replace: ' ', '-' %}
+                        <li><a href="#{{ id }}">{{ title }}</a></li>
+                    {% endif %}
+                {% endfor %}
             </ul>
         </aside>
 
@@ -49,8 +50,4 @@
         <p>© 2024 Meu Website</p>
     </footer>
 </body>
-
-
-    
 </html>
-
