@@ -7,7 +7,7 @@ layout: default
 
 ####  Ricardo Laranjeira Couto Pitta, Nelson Carlin Filho, Bruno Basso Manzato, David Fernando Freitas da Silva Cavalcante, Luis Eduardo Funo de Moura França, Vitor Hugo de Almeida Machado on Behalf of COSINE-100 experiment
 
-# Abstract
+# Abstract {#Abstract}
 
 The existence of dark matter is proven by gravitational evidence, and various theoretical models propose particles with properties attributed to it. There is a
 global effort to detect dark matter, and the DAMA/LIBRA experiment, which uses NaI(Tl) crystals, has been presenting signals consistent with the expected annual
@@ -23,7 +23,7 @@ search for dark matter by detecting pairs of electrons and positrons from the de
 Earth after 1.7 years of data acquisition from the COSINE-100 experiment will be presented, as well as how these results compare with those of other experiments.
 
 
-
+# Introduction {#Introduction}
 
 $$
 L = -\frac{1}{4}F_{\mu \nu}F^{\mu \nu} - -\frac{1}{4}F'_{\mu \nu}F'^{\mu \nu} + \frac{\epsilon '}{2}F_{\mu \nu}F'^{\mu \nu} - \frac{1}{2}m^2_A A'^2 + \sum_f \bar{f}(i \slash{\partial} - q_f e \slash{A} - m_f )f + \bar{\chi} (i\slash{\partial} - g_\chi e \slash{A'} - m_\chi ) \chi
