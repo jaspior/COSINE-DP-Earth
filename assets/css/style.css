@@ -1,37 +1,116 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.sidebar {
-    width: 25%;
-    background-color: #f7f7f7;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.content {
-    width: 75%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.sidebar ul {
-    list-style-type: none;
+/* Estilo Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e; /* Fundo escuro, remetendo ao espaço */
+    color: #f5f5f5; /* Texto claro */
+    margin: 0;
     padding: 0;
 }
 
-.sidebar ul li {
-    margin-bottom: 10px;
+header {
+    background-color: #111; /* Fundo ainda mais escuro para o cabeçalho */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00; /* Amarelo claro para destacar o título */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.sidebar ul li a {
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 10px;
+}
+
+nav a {
+    color: #f5f5f5;
     text-decoration: none;
-    color: #333;
+    margin: 0 15px;
+    padding: 8px 16px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-.sidebar ul li a:hover {
-    color: #007bff;
+nav a:hover {
+    background-color: #ffcc00; /* Amarelo ao passar o mouse */
+    color: #111;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para citações e textos em destaque */
+blockquote {
+    border-left: 4px solid #ffcc00;
+    padding-left: 15px;
+    color: #f5f5f5;
+    font-style: italic;
+}
+
+/* Estilo para botões */
+button {
+    background-color: #ffcc00;
+    color: #111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+    }
 }
