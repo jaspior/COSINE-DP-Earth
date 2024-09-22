@@ -7,6 +7,11 @@ body {
     padding: 0;
 }
 
+  .math-container {
+    overflow-x: auto; /* permite rolagem horizontal se necessário */
+    white-space: nowrap; /* impede que o conteúdo quebre a linha */
+    }
+
 header {
     background-color: #111; /* Fundo ainda mais escuro para o cabeçalho */
     padding: 20px;
