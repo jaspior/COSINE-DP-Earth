@@ -144,6 +144,62 @@ Esses portais podem ser classificados com relação ao spin da partícula mediad
 
 <p> Using natural units, performing the calculations for the process \( \chi \bar{\chi} \rightarrow m_{A\prime} m_{A\prime} \) in the center-of-mass frame (since thermalized dark matter v \( << \) m)  and then then the process \( A\prime \rightarrow l \bar{l}  \) its possible to determine that the dark phton will have Energy \( E = m_\chi \) in the lab frame. It's possible to determine the angle between the leptons too.</p>
 
+<p>Dark Matter particle density \( N_\chi \) follows \( \frac{dN_\chi}{dt} = C_{cap} - C_{ann}N^2(t)_\chi - C_{evap} N(t) \) where \( C_{cap} \, C_{ann} \, and C_{evap} \) are the capture rate, annihilation rate and evaporation rate, respectively.
+The dark matter is captured by a gravitationa well. Annihilation and evaporation process are exclusionary: if they gain enought velocity to escape the gravitational well after a scattering, dark
+    matter wont accumulate and will evaporate. If they are massive enough, they will termalize and can annihilate when self-interact. The threshold mass varies with the celestial body mass. For Planet Earth,
+    only dark matter with masses over 12 GeV can accumulate and annihilate. 
+
+</p>
+
+<p>Solving the equation give us\(\Gamma_{ann}\), the Dark Matter Annihilation rate::</p>
+
+<div class="math-container">
+  $$ \Gamma_{ann} = \frac{1}{2}C_{cap} tanh^2\left( \frac{\tau_{Earth}}{\tau} \right) = \Gamma_{ann} = \frac{1}{2} C_{ann} N_\chi^2 $$
+</div>
+
+ <p>
+    where \(\tau_{earth} = 4.5 \) Giga years, the Age of Earth and \( \tau = (C_{cap} C_{ann})^{-1/2} \) the time scale for dark matter annihilation and capture to reach equilibrium.
+</p>
+
+<p>
+    The capture rate \( C_{cap} = \sum_N C_{cap}^N \) is the sum of the capture rate for the main elemensts that form the Earth's mantle and core:
+</p>
+
+    
+
+<div class="math-container">
+  $$C^N_{cap} = n_\chi (4\pi)^2 \int_0^{R} dr \int_0^{v_{gal}} du \int_{E_{min(u)}}^{E_{max(u)}} dE  r^2 u^2 n_N(r) f_{esc} (u) $$
+  $$ \frac{u^2 + v^2_{esc}(r)}{u} \frac{d\sigma_N}{dE_r} \Theta (\Delta E) $$
+</div>
+
+<p>
+    Where N is the nucleus that captures the dark matter, \( n_\chi = \, (0.3/cm^3)(GeV/m_\chi) \) the local dark matter density, \( n_N(r) \) the element N density as a function of Earth's radius,
+    \(f_{esc}(u) \) the dark matter velocity distribution in Earth frame, \( v_{esc}(r)\) the Earth'escape velocity as a funcion of Earth's Radius, \( u = \sqrt{\omega^2 - v_{esc}^2 \) the dark matter
+    velocity in galaxy frame and \( omega \) the partcile velocity in Earth's frame. \(  E_min(u) = \frac{1}{2} m_\chi u^2 \) is the free dark matter kinetci energy and \( E_max(u) = \frac{2\mu^2_n}{m_n}(u^2 + v_{esc}^2) \)
+    is the max kinetic energy that the dark matter can acquire scatering with Earths nucleons. The step function \( \Theta (\Delta E) \) make sures that \( E_{max} > E_{min}), condition for dark matter captre.
+    
+</p>
+
+    
+<div style="text-align: center;">
+    <img src="https://github.com/jaspior/COSINE-DP-Earth/blob/main/imgs/earth_proile.png?raw=true" 
+         alt="desity distribution" style="max-width: 100%; height: auto;">
+    <p><strong>Fig 4 - Density distribution of elements as a function of Earth's density [23-24] </strong></p>
+    </div>
+
+
+<p> The therm </p>
+
+    <div class="math-container">
+  $$ \frac{d\sigma_N}{dE_r} \approx 8 \pi^2 \epsilon^2 \alpha_\chi \alpha Z^2_N \frac{1}{(u^2 + v^2_{esc})} \frac{m_N}{(2m_NE_r + m^2_A)^2} |F_N (E_r)|^2 $
+    </div>
+
+<p>
+    is the dark matter/nucleon cross-section, where \( E_r = \mu_N^2 \omega^2 (1 - cos\theta_{cm}/m_N) \) is the recoil energy, \( \mu_N \) the dark matter - nucleon reduced mass, \( \thega_{cm} \)
+    the angle in the center-of-mass frame, \( Z_N \) the nucelon number of protons an \( F_N(E_r) \) the Helms form Factor. 
+</p>
+
+
 
     
 <p>
@@ -154,13 +210,8 @@ Esses portais podem ser classificados com relação ao spin da partícula mediad
   $$ N_{sig} = 2 \Gamma_{ann}\frac{A_{eff}}{4\pi R^2_{Earth}} \left( e^{-R/L} - e^{-(R+D)/L} -  \right)T $$
 </div>
 
-<p>
-  Where \(\Gamma_{ann}\) is the Dark Matter Annihilation rate:
-</p>
 
-<div class="math-container">
-  $$ \Gamma_{ann} = \frac{1}{2}C_{cap} tanh^2\left( \frac{\tau_{Earth}}{\tau} \right) $$
-</div>
+
 </section>
 
 <section>
@@ -185,7 +236,7 @@ Esses portais podem ser classificados com relação ao spin da partícula mediad
          alt="Posterior probability" style="max-width: 100%; height: auto;">
     <p> (c) </p>
 
-    <p><strong>Fig 3 - Histograms of the analysis performed using individual crystals (a), all crystals with events with summed energy > 4 MeV (b) and a posterior with its median and 90 % C.L. limits (c). </strong></p>
+    <p><strong>Fig 4 - Histograms of the analysis performed using individual crystals (a), all crystals with events with summed energy > 4 MeV (b) and a posterior with its median and 90 % C.L. limits (c). </strong></p>
 </div>
     
     
@@ -194,12 +245,12 @@ Esses portais podem ser classificados com relação ao spin da partícula mediad
 <section>
     <h2>Conclusion</h2>
 
-    <p>    COSINE-100 can be used to search for dark photons. As seen in Fig. 4, the limits may exclude new parameter space regions. It's important to note that, while it's probing an excluded region, a different technique is being used, improving our knowledge.</p>
+    <p>    COSINE-100 can be used to search for dark photons. As seen in Fig. 5, the limits may exclude new parameter space regions. It's important to note that, while it's probing an excluded region, a different technique is being used, improving our knowledge.</p>
 
         <div style="text-align: center;">
     <img src="https://raw.githubusercontent.com/jaspior/COSINE-DP-Earth/refs/heads/main/imgs/par_space.png" 
          alt="Paramater space" style="max-width: 100%; height: auto;">
-    <p><strong>Fig 4 - Parameter Space for dark photons for many 
+    <p><strong>Fig 5 - Parameter Space for dark photons for many 
 experiments. COSINE-100 may reach new regions depending on the understanding of SN 1987 A limits: Chang et al, 2017 SN 1987 A limits are smaller than previous works, allowing COSINE-100 to reach a non-excluded area. </strong></p>
     </div>
 
@@ -237,7 +288,8 @@ experiments. COSINE-100 may reach new regions depending on the understanding of 
 <p>[19] J. Ellis, J. F. Gunion, H. E. Haber, L. Roszkowski, and F. Zwirner, “Higgs bosons in anonminimal supersymmetric model,” Phys. Rev. D, vol. 39, pp. 844–869, Feb 1989.</p>
 <p>[20] M. Fabbrichesi, E. Gabrielli, and G. Lanfranchi, The physics of the Dark Photon: A Primer. Springer, 2021.</p>
 <p> [21] M. Buschmann, J. Kopp, J. Liu, and P. A. N. Machado, “Lepton jets from radiating dark matter,” Journal of High Energy Physics, vol. 2015, Jul 2015</p>
-    
+<p>[22] A. M. Dziewonski and D. L. Anderson, “Preliminary reference earth model,” Physics of the Earth and Planetary Interiors, vol. 25, no. 4, pp. 297–356, 1981.</p>
+<p>[23] A. Green and P. Tanedo, “Darkcappy: Dark matter capture and annihilation,” Computer Physics Communications, vol. 242, p. 120–131, Sep 2019.</p>    
 </section>
     
 </main >
