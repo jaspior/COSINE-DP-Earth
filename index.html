@@ -224,7 +224,7 @@ The dark matter is captured by a gravitationa well. Annihilation and evaporation
 </div>
 
 <p> 
-    Where \( N_{sig} \) is the expected number of dark photons decais in T years. \( A_{eff} \) and D are the effective area and effective depth of the detector. \( e^{-R/L} - e^{-(R+D)/L \) give us the probability of the
+    Where \( N_{sig} \) is the expected number of dark photons decais in T years. \( A_{eff} \) and D are the effective area and effective depth of the detector. \( e^{-R/L} - e^{-(R+D)/L} \) give us the probability of the
     particle to decay inside the detector volume and \( L = R_{earth} Branchin \, Ratio \left(\frac{3.6\,10^{-9}}{\epsilon}\right)^2 \left(\frac{m_\chi/m_{A'}}{1000}\right)\left(\frac{GeV}{m_{A'}}\right) \).
 </p>
 
@@ -237,9 +237,31 @@ The dark matter is captured by a gravitationa well. Annihilation and evaporation
 <h2>Analysis</h2>
 
     <p>
-          For the analysis, a expected signal spectrum was simulated using Geant4 Toolkit and the limits were obtained perfoming a bayesian inference using MCMC. 
+          For the analysis, the dark photons flux was calculated using a c++ code and cross-checked wiht results from DarkCappy [23].  The expected signal spectrum was simulated using Geant4 Toolkit. 
+        and the limits were obtained perfoming a bayesian inference by  Markov chain Monte Carlo (MCMC) using COSINE Analysis toolkit (CAT) The toolkit uses MCMC to get the posterios probabilities: 
 
     </p>
+
+<div class="math-container">
+  $$ \mathcal{P} (F_{dp} | D) = N \int d \alpha \int d \beta \mathcal{L} (D | F_{dp},\alpha, \beta) \pi(F_{dp}) $$
+</div>
+
+    <p>
+        Where N is a normalization factor, \( F_{dp} \) is the dark photon flux, \( \alpha \, , \beta \) nuisance paramaters related to the systematics of background, D the measured data, 
+      \( \mathcal{L} (D | F_{dp},\alpha, \beta) \) the max-log likelihood function to fit the simulated data to the measured data and \( \pi(F_{dp} \) the priors probabilities for the dark photons signal. 
+        The decay of dark photons can be described to follow a Poisson distribution and then the max-log likelihood can be written as:
+    </p>
+<div class="math-container"> 
+        \mathcal{L} (D | F_{dp},\alpha, \beta) = \prod_i ^ 5 \prod_j^{nbins} P(D_{ij}/E_{ij})
+</div>
+ 
+<p>
+    With \( P(D_{ij}/E_{ij}) \) the Poisson distribution, i and j the crystal and energy bin where the event happens, \( D_{ij}$ \, and \, $E_{ij} \) the observed number of events and the expected
+    number of events for t i crystal and j energy bin. Once the posterior is obtained, we can derive the 90% confidence level gettting the accumulated probabilty function. As seem in Fig. 4 (c),
+    The x-axis give us the "signal strength". For a expected number of dark photons decay N, the dectector needs to detect \( N \dot signal streght \) decays. 
+</p>
+ 
+
 
 <div style="text-align: center;">
       <img src="https://raw.githubusercontent.com/jaspior/COSINE-DP-Earth/refs/heads/main/imgs/set2_hist.png" 
@@ -256,7 +278,8 @@ The dark matter is captured by a gravitationa well. Annihilation and evaporation
 
     <p><strong>Fig 4 - Histograms of the analysis performed using individual crystals (a), all crystals with events with summed energy > 4 MeV (b) and a posterior with its median and 90 % C.L. limits (c). </strong></p>
 </div>
-    
+
+<p> AS can be seen in the posterior in fig. 4, \( 3 \sigma \) covers the null hypotesys.</p>
     
 </section>
 
